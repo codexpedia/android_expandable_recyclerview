@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:weightSum="2">
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:id="@+id/card_1"
+                android:layout_height="@dimen/card_large"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/card_spacing" />
+
+        <FrameLayout
+                android:id="@+id/card_4"
+                android:layout_height="@dimen/card_xsmall"
+                android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <View
+            android:id="@+id/vertical_divider"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/card_spacing"
+            android:layout_centerInParent="true" />
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:id="@+id/card_2"
+                android:layout_height="@dimen/card_small"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/card_spacing" />
+
+        <FrameLayout
+                android:id="@+id/card_3"
+                android:layout_height="@dimen/card_medium"
+                android:layout_width="match_parent" />
+    </LinearLayout>
+</LinearLayout>
